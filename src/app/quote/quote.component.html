@@ -6,11 +6,12 @@
     <ul>
         <br>
       <div *ngFor='let quote of quotes;let i = index'>
-        {{quote.name}}
-        <br>
+          <li appStrikethrough> {{quote.name}} due on {{quote.completeDate|date|uppercase}}</li>
+      
         <button (click)='toggleDetails(i)'>More</button>
         <br>
-        <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete) = 'completeGoal($event,i)'></app-quote-detail>
+        <!-- <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete) = 'completeGoal($event,i)'></app-quote-detail> -->
+        <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete) = 'deleteGoal($event,i)'></app-quote-detail>
       </div>
     
     </ul>
@@ -18,4 +19,3 @@
 </div>
 
 
-  

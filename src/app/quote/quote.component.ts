@@ -8,10 +8,10 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
  
     quotes:Quote[] = [
-      new Quote(1,'Love Quotes','Mireille','A friend is someone who knows all about you and still loves you.'),
-      new Quote(2,'Life Quotes','Mireille','Life is really simple, but we insist on making it complicated.'),
-      new Quote(3,'Inspiration Quotes','Mireille','Integrity Is The Most Valuable And Respected Quality Of Leadership. Always Keep Your Word.'),
-      new Quote(4,'Success Quotes','Mireille','Success is not final; failure is not fatal: It is the courage to continue that counts.')
+      new Quote(1,'Love Quotes','Mireille','A friend is someone who knows all about you and still loves you.',new Date(2019,1,14)),
+      new Quote(2,'Life Quotes','Mireille','Life is really simple, but we insist on making it complicated.',new Date(2019,2,14)),
+      new Quote(3,'Inspiration Quotes','Mireille','Integrity Is The Most Valuable And Respected Quality Of Leadership. Always Keep Your Word.',new Date(2019,3,14)),
+      new Quote(4,'Success Quotes','Mireille','Success is not final; failure is not fatal: It is the courage to continue that counts.',new Date(2019,4,14))
     ];
 
     toggleDetails(index){
@@ -22,7 +22,15 @@ export class QuoteComponent implements OnInit {
         this.quotes.splice(index,1);
       }
     }
-    
+    deleteGoal(isComplete, index){
+      if (isComplete) {
+        let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].name}?`)
+  
+        if (toDelete){
+          this.quotes.splice(index,1)
+        }
+      }
+    }
   constructor() { }
 
   ngOnInit() {

@@ -2,4 +2,9 @@
 <p>
     {{quote.description}}
     <button (click)= 'quoteComplete(true)'>Like</button>
+    <br>
+    <button (click)= 'goalDelete(true)'>Delete Goal</button>
   </p>
+  <p>This goal will be complete in {{quote.completeDate|dateCount}} days</p>
+  
+ 
