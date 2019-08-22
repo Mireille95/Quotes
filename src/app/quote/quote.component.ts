@@ -13,6 +13,12 @@ export class QuoteComponent implements OnInit {
       new Quote(3,'Inspiration Quotes','Mireille','Integrity Is The Most Valuable And Respected Quality Of Leadership. Always Keep Your Word.',new Date(2019,3,14)),
       new Quote(4,'Success Quotes','Mireille','Success is not final; failure is not fatal: It is the courage to continue that counts.',new Date(2019,4,14))
     ];
+    addNewQuote(quote){
+      let quoteLength = this.quotes.length;
+     quote.id = quoteLength+1;
+      quote.completeDate = new Date(quote.completeDate)
+      this.quotes.push(quote)
+    }
 
     toggleDetails(index){
       this.quotes[index].showDescription = !this.quotes[index].showDescription;
