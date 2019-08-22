@@ -1,10 +1,8 @@
 <!-- <p>quote-form works!</p> -->
 <div class="container-fluid">
         <h2 class="text-center">Create Quotes</h2>
-        <!-- <hr> -->
-       
         <form  (ngSubmit)='submitQuote()' #goalForm='ngForm'>
-            <div class="form-group">
+    <div class="form-group">
       
                 <label for="name">Name</label>
                 <input type="text" required class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name='ngModel'>
@@ -12,8 +10,8 @@
                 <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
                         <p>Name is required</p>
                       </div>
-            </div>
-            <div class="form-group">
+    </div>
+    <div class="form-group">
       
                     <label for="name">Author</label>
                     <input type="text" required class="form-control" id="author" [(ngModel)]="newQuote.author" name="author" #author='ngModel'>
@@ -21,22 +19,22 @@
                     <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
                             <p>Name is required</p>
                           </div>
-            </div>
-            <div class="form-group">
+    </div>
+    <div class="form-group">
       
                 <label for="description">Quotes</label>
                 <textarea class="form-control" id="description" rows="4" [(ngModel)]="newQuote.description" name="description" #description="ngModel" required></textarea>
                 <div [hidden]="description.valid || description.pristine" class="alert alert-danger">
                         <p>Description is required</p>
                       </div>
-            </div>
-            <div class="form-group">
+    </div>
+    <div class="form-group">
                 <label for="complete">Date</label>
                 <input type='date' id="complete" class="form-control"  [(ngModel)]="newQuote.completeDate" name="completeDate" #completeDate="ngModel" required>
                 <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger">
                         <p>Date is required</p>
                 </div>
-            </div>
+    </div>
             <button type="submit" class="btn btn-success">Add Quote</button>
         </form>
  </div>
