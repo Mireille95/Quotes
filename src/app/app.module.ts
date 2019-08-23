@@ -9,6 +9,9 @@ import { StrikethroughDirective } from './strikethrough.directive';
 import { DateCountPipe } from './date-count.pipe';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { TimeAgoPipe } from './time-ago.pipe';
+import { ArticleComponent } from './article/article.component';
+import { ArticleModelComponent } from './article-model/article-model.component';
+import { ArticleActionComponent } from './article-action/article-action.component';
 
 
 
@@ -21,6 +24,9 @@ import { TimeAgoPipe } from './time-ago.pipe';
     DateCountPipe,
     QuoteFormComponent,
     TimeAgoPipe,
+    ArticleComponent,
+    ArticleModelComponent,
+    ArticleActionComponent,
    
   ],
   imports: [
