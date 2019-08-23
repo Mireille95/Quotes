@@ -12,6 +12,8 @@ import { TimeAgoPipe } from './time-ago.pipe';
 import { ArticleComponent } from './article/article.component';
 import { ArticleModelComponent } from './article-model/article-model.component';
 import { ArticleActionComponent } from './article-action/article-action.component';
+import { UpvoteComponent } from './upvote/upvote.component';
+import { DownvoteComponent } from './downvote/downvote.component';
 
 
 
@@ -27,6 +29,8 @@ import { ArticleActionComponent } from './article-action/article-action.componen
     ArticleComponent,
     ArticleModelComponent,
     ArticleActionComponent,
+    UpvoteComponent,
+    DownvoteComponent,
    
   ],
   imports: [

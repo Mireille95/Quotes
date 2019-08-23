@@ -12,6 +12,17 @@ export class AppComponent {
     new Quote(3,'Inspiration Quotes','Mireille','Integrity Is The Most Valuable And Respected Quality Of Leadership. Always Keep Your Word.',new Date(2019,3,14)),
     new Quote(4,'Success Quotes','Mireille','Success is not final; failure is not fatal: It is the courage to continue that counts.',new Date(2019,4,14))
   ];
+  private content: string;
+    public query: string;
+    
+    public highlight() {
+      if(!this.query) {
+          return this.content;
+      }
+      return this.content.replace(new RegExp(this.query, "gi"), match => {
+          return '<span class="highlightText">' + match + '</span>';
+      });
+  }
 // constructor(){
 //   this.quotes = ['Love Quotes', 'Life Quotes', 'Inspiration Quotes', 'Success Quotes']
 // } 
