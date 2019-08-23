@@ -37,6 +37,24 @@ export class QuoteComponent implements OnInit {
         }
       }
     }
+    UpvoteQuote(isComplete, index){
+      if (isComplete) {
+        let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].name}?`)
+  
+        if (toDelete){
+          this.quotes.splice(index,1)
+        }
+      }
+    }
+    DownvoteQuote(isComplete, index){
+      if (isComplete) {
+        let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].name}?`)
+  
+        if (toDelete){
+          this.quotes.splice(index,1)
+        }
+      }
+    }
   constructor() { }
 
   ngOnInit() {
