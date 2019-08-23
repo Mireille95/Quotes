@@ -27,4 +27,9 @@ fixedInViewport="true"
         (click)="drawer.toggle()"
         *ngif="(isHandset | async)!.matches">
         <mat-icon aria-label="side nav toggle icon">Home</mat-icon>
-        
+        </button>
+    <span>Welcome to Quotes daily</span>
+    <ng-content></ng-content>
+    </mat-toolbar>
+    </mat-sidenav-content>
+    </mat-sidebar-container>
