@@ -5,6 +5,6 @@
     <br>
      <button (click)= 'goalDelete(true)'  class="btn btn-outline-danger">Delete Goal</button>
 </p>
-<p>This goal will be complete in {{quote.completeDate|dateCount}} days</p>
+<!-- <p>This goal will be complete in {{quote.completeDate|dateCount}} days</p> -->
   
- 
+<p> {{quote.completeDate|timeAgo}}</p>

@@ -8,8 +8,8 @@ import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { StrikethroughDirective } from './strikethrough.directive';
 import { DateCountPipe } from './date-count.pipe';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { MainNavComponent } from './main-nav/main-nav.component';
+import { TimeAgoPipe } from './time-ago.pipe';
+
 
 
 @NgModule({
@@ -20,8 +20,8 @@ import { MainNavComponent } from './main-nav/main-nav.component';
     StrikethroughDirective,
     DateCountPipe,
     QuoteFormComponent,
-    NavbarComponent,
-    MainNavComponent
+    TimeAgoPipe,
+   
   ],
   imports: [
     BrowserModule,

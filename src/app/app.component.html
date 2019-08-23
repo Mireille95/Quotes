@@ -15,7 +15,7 @@
   <p style="text-align: center">“Success is not final; failure is not fatal: It is the courage to continue that counts.”</p>
     <!-- <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2> -->
 <router-outlet></router-outlet>
-<div>
+<div class="Jumbotron">
   <h1 style="text-align: center">My Quotes</h1>
   <ul>
      <li *ngFor='let quote of Quotes'>
@@ -25,6 +25,3 @@
   <p *ngIf='quotes.length > 5'>Your quotes are too many</p>
 </div>
 <app-quote></app-quote>
-<main-nav>
-  <button mat-raised-button-color="accent">click me</button>
-</main-nav>
