@@ -9,8 +9,7 @@ My project is about creating the webste which does Quotes online where you can a
 + published
 ## instruction
 + you must enter a quotes before to see the changes
-+
-+
+
 ## BDD
 + my project must allow user to create his/her own quotes
 + my project must allow user to submit 
@@ -45,9 +44,9 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-# license and copyright
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## license and copyright
 
 Copyright (c) 2019 THE QUOTES
   
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
