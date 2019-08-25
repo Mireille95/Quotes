@@ -2,6 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
 ## The Quotes
+https://Mireille95.github.io/Quotes
 # DESCRIPTION
 My project is about creating the webste which does Quotes online where you can add it and be able to view and delete it ...
 ## author name 
